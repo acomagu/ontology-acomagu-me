@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "acomagu-me"
+  },
+  "targets": {
+    "acomagu-me": {
+      "hosting": {
+        "ontology": [
+          "ontology-acomagu-me"
+        ]
+      }
+    }
+  }
+}

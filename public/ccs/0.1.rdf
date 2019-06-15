@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:dc11="http://purl.org/dc/elements/1.1/"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+  <owl:Ontology rdf:about="https://acomagu.me/ontology/ccs#">
+    <dc11:title>The Call of Cthulhu Character Ontology</dc11:title>
+    <rdfs:comment>
+This ontology is for describing a character of Call of Cthulhu TRPG. This is
+designed that the character can include whole informations of the character
+sheet.
+</rdfs:comment>
+    <owl:versionIRI rdf:resource="https://acomagu.me/ontology/ccs/0.1#"/>
+    <owl:versionInfo>$Date: 2018/12/25 00:00:00 $</owl:versionInfo>
+  </owl:Ontology>
+
+  <rdfs:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#Character">
+    <rdfs:label>Character</rdfs:label>
+    <rdfs:comment>Any character for Call of Cthulhu.</rdfs:comment>
+  </rdfs:Class>
+
+  <owl:DatatypeProperty rdf:about="https://acomagu.me/ontology/ccs/0.1#str">
+    <rdfs:label>STR</rdfs:label>
+    <rdfs:comment>STR</rdfs:comment>
+    <rdfs:domain rdf:resource="https://acomagu.me/ontology/ccs/0.1#Character"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="https://acomagu.me/ontology/ccs/0.1#con">
+    <rdfs:label>CON</rdfs:label>
+    <rdfs:comment>CON</rdfs:comment>
+    <rdfs:domain rdf:resource="https://acomagu.me/ontology/ccs/0.1#Character"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="https://acomagu.me/ontology/ccs/0.1#pow">
+    <rdfs:label>POW</rdfs:label>
+    <rdfs:comment>POW</rdfs:comment>
+    <rdfs:domain rdf:resource="https://acomagu.me/ontology/ccs/0.1#Character"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="https://acomagu.me/ontology/ccs/0.1#dex">
+    <rdfs:label>DEX</rdfs:label>
+    <rdfs:comment>DEX</rdfs:comment>
+    <rdfs:domain rdf:resource="https://acomagu.me/ontology/ccs/0.1#Character"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="https://acomagu.me/ontology/ccs/0.1#app">
+    <rdfs:label>APP</rdfs:label>
+    <rdfs:comment>APP</rdfs:comment>
+    <rdfs:domain rdf:resource="https://acomagu.me/ontology/ccs/0.1#Character"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="https://acomagu.me/ontology/ccs/0.1#siz">
+    <rdfs:label>SIZ</rdfs:label>
+    <rdfs:comment>SIZ</rdfs:comment>
+    <rdfs:domain rdf:resource="https://acomagu.me/ontology/ccs/0.1#Character"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="https://acomagu.me/ontology/ccs/0.1#int">
+    <rdfs:label>INT</rdfs:label>
+    <rdfs:comment>INT</rdfs:comment>
+    <rdfs:domain rdf:resource="https://acomagu.me/ontology/ccs/0.1#Character"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="https://acomagu.me/ontology/ccs/0.1#edu">
+    <rdfs:label>EDU</rdfs:label>
+    <rdfs:comment>EDU</rdfs:comment>
+    <rdfs:domain rdf:resource="https://acomagu.me/ontology/ccs/0.1#Character"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="https://acomagu.me/ontology/ccs/0.1#hp">
+    <rdfs:label>HP</rdfs:label>
+    <rdfs:comment>HP</rdfs:comment>
+    <rdfs:domain rdf:resource="https://acomagu.me/ontology/ccs/0.1#Character"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="https://acomagu.me/ontology/ccs/0.1#mp">
+    <rdfs:label>MP</rdfs:label>
+    <rdfs:comment>MP</rdfs:comment>
+    <rdfs:domain rdf:resource="https://acomagu.me/ontology/ccs/0.1#Character"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="https://acomagu.me/ontology/ccs/0.1#san">
+    <rdfs:label>SAN</rdfs:label>
+    <rdfs:comment>SAN</rdfs:comment>
+    <rdfs:domain rdf:resource="https://acomagu.me/ontology/ccs/0.1#Character"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </owl:DatatypeProperty>
+
+  <owl:ObjectProperty rdf:about="https://acomagu.me/ontology/ccs/0.1#hasSkill">
+    <rdfs:label>has_skill</rdfs:label>
+    <rdfs:domain rdf:resource="https://acomagu.me/ontology/ccs/0.1#Character"/>
+    <rdfs:range rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+    <rdfs:comment>Defiens a character has a skill especially. If a skill is omitted for a character, the character has the skill with the base chance.</rdfs:comment>
+  </owl:ObjectProperty>
+
+  <owl:DatatypeProperty rdf:about="https://acomagu.me/ontology/ccs/0.1#kind">
+    <rdfs:label>kind</rdfs:label>
+    <rdfs:domain>
+      <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#OwnLanguage">
+        <rdfs:label>Own Language</rdfs:label>
+        <rdfs:comment>Own Language</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+      </owl:Class>
+    </rdfs:domain>
+
+    <rdfs:domain>
+      <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#OtherLanguage">
+        <rdfs:label>Other Language</rdfs:label>
+        <rdfs:comment>Other Language</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+      </owl:Class>
+    </rdfs:domain>
+
+    <rdfs:domain>
+      <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#Art">
+        <rdfs:label>Art</rdfs:label>
+        <rdfs:comment>Art</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+      </owl:Class>
+    </rdfs:domain>
+
+    <rdfs:domain>
+      <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#DriveAutomobile">
+        <rdfs:label>Drive Automobile</rdfs:label>
+        <rdfs:comment>Drive Automobile</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+      </owl:Class>
+    </rdfs:domain>
+
+    <rdfs:domain>
+      <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#Craft">
+        <rdfs:label>Craft</rdfs:label>
+        <rdfs:comment>Craft</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+      </owl:Class>
+    </rdfs:domain>
+
+    <rdfs:domain>
+      <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#Pilot">
+        <rdfs:label>Pilot</rdfs:label>
+        <rdfs:comment>Pilot</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+      </owl:Class>
+    </rdfs:domain>
+
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:comment>Specifies the kind of a skill. For example, what language, what vehicle does be driven, etc..</rdfs:comment>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="https://acomagu.me/ontology/ccs/0.1#chance">
+    <rdfs:label>chance</rdfs:label>
+    <rdfs:domain rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:comment>Defines the skill's chance percentage. e.g. 80.</rdfs:comment>
+  </owl:DatatypeProperty>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#Skill">
+    <rdfs:label>Skill</rdfs:label>
+    <rdfs:comment>Skill</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#Accounting">
+    <rdfs:label>Accounting</rdfs:label>
+    <rdfs:comment>Accounting</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#Anthropology">
+    <rdfs:label>Anthropology</rdfs:label>
+    <rdfs:comment>Anthropology</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#Archaeology">
+    <rdfs:label>Archaeology</rdfs:label>
+    <rdfs:comment>Archaeology</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#Astronomy">
+    <rdfs:label>Astronomy</rdfs:label>
+    <rdfs:comment>Astronomy</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#Bargain">
+    <rdfs:label>Bargain</rdfs:label>
+    <rdfs:comment>Bargain</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#Biology">
+    <rdfs:label>Biology</rdfs:label>
+    <rdfs:comment>Biology</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#Chemistry">
+    <rdfs:label>Chemistry</rdfs:label>
+    <rdfs:comment>Chemistry</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#Climb">
+    <rdfs:label>Climb</rdfs:label>
+    <rdfs:comment>Climb</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#Conceal">
+    <rdfs:label>Conceal</rdfs:label>
+    <rdfs:comment>Conceal</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#CreditRating">
+    <rdfs:label>Credit Rating</rdfs:label>
+    <rdfs:comment>Credit Rating</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#CthulhuMythos">
+    <rdfs:label>Cthulhu Mythos</rdfs:label>
+    <rdfs:comment>Cthulhu Mythos</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#Disguise">
+    <rdfs:label>Disguise</rdfs:label>
+    <rdfs:comment>Disguise</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#Dodge">
+    <rdfs:label>Dodge</rdfs:label>
+    <rdfs:comment>Dodge</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#ElectricalRepair">
+    <rdfs:label>Electrical Repair</rdfs:label>
+    <rdfs:comment>Electrical Repair</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#FastTalk">
+    <rdfs:label>Fast Talk</rdfs:label>
+    <rdfs:comment>Fast Talk</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#FirstAid">
+    <rdfs:label>First Aid</rdfs:label>
+    <rdfs:comment>First Aid</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#FistPunch">
+    <rdfs:label>Fist Punch</rdfs:label>
+    <rdfs:comment>Fist Punch</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#Geology">
+    <rdfs:label>Geology</rdfs:label>
+    <rdfs:comment>Geology</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#Grapple">
+    <rdfs:label>Grapple</rdfs:label>
+    <rdfs:comment>Grapple</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#Handgun">
+    <rdfs:label>Handgun</rdfs:label>
+    <rdfs:comment>Handgun</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#HeadButt">
+    <rdfs:label>Head Butt</rdfs:label>
+    <rdfs:comment>Head Butt</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#Hide">
+    <rdfs:label>Hide</rdfs:label>
+    <rdfs:comment>Hide</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#History">
+    <rdfs:label>History</rdfs:label>
+    <rdfs:comment>History</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#Jump">
+    <rdfs:label>Jump</rdfs:label>
+    <rdfs:comment>Jump</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#Kick">
+    <rdfs:label>Kick</rdfs:label>
+    <rdfs:comment>Kick</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#Law">
+    <rdfs:label>Law</rdfs:label>
+    <rdfs:comment>Law</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#LibraryUse">
+    <rdfs:label>Library Use</rdfs:label>
+    <rdfs:comment>Library Use</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#Listen">
+    <rdfs:label>Listen</rdfs:label>
+    <rdfs:comment>Listen</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#Locksmith">
+    <rdfs:label>Locksmith</rdfs:label>
+    <rdfs:comment>Locksmith</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#MachineGun">
+    <rdfs:label>Machine Gun</rdfs:label>
+    <rdfs:comment>Machine Gun</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#MartialArts">
+    <rdfs:label>Martial Arts</rdfs:label>
+    <rdfs:comment>Martial Arts</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#MechanicalRepair">
+    <rdfs:label>Mechanical Repair</rdfs:label>
+    <rdfs:comment>Mechanical Repair</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#Medicine">
+    <rdfs:label>Medicine</rdfs:label>
+    <rdfs:comment>Medicine</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#NaturalHistory">
+    <rdfs:label>Natural History</rdfs:label>
+    <rdfs:comment>Natural History</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#Navigate">
+    <rdfs:label>Navigate</rdfs:label>
+    <rdfs:comment>Navigate</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#Occult">
+    <rdfs:label>Occult</rdfs:label>
+    <rdfs:comment>Occult</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#OperateHeavyMachine">
+    <rdfs:label>Operate Heavy Machine</rdfs:label>
+    <rdfs:comment>Operate Heavy Machine</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#Persuade">
+    <rdfs:label>Persuade</rdfs:label>
+    <rdfs:comment>Persuade</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#Pharmacy">
+    <rdfs:label>Pharmacy</rdfs:label>
+    <rdfs:comment>Pharmacy</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#Photography">
+    <rdfs:label>Photography</rdfs:label>
+    <rdfs:comment>Photography</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#Physics">
+    <rdfs:label>Physics</rdfs:label>
+    <rdfs:comment>Physics</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#Psychoanalysis">
+    <rdfs:label>Psychoanalysis</rdfs:label>
+    <rdfs:comment>Psychoanalysis</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#Psychology">
+    <rdfs:label>Psychology</rdfs:label>
+    <rdfs:comment>Psychology</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#Ride">
+    <rdfs:label>Ride</rdfs:label>
+    <rdfs:comment>Ride</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#Rifle">
+    <rdfs:label>Rifle</rdfs:label>
+    <rdfs:comment>Rifle</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#Shotgun">
+    <rdfs:label>Shotgun</rdfs:label>
+    <rdfs:comment>Shotgun</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#Sneak">
+    <rdfs:label>Sneak</rdfs:label>
+    <rdfs:comment>Sneak</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#SpotHidden">
+    <rdfs:label>Spot Hidden</rdfs:label>
+    <rdfs:comment>Spot Hidden</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#SubmachineGun">
+    <rdfs:label>Submachine Gun</rdfs:label>
+    <rdfs:comment>Submachine Gun</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#Swim">
+    <rdfs:label>Swim</rdfs:label>
+    <rdfs:comment>Swim</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#Throw">
+    <rdfs:label>Throw</rdfs:label>
+    <rdfs:comment>Throw</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#Track">
+    <rdfs:label>Track</rdfs:label>
+    <rdfs:comment>Track</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://acomagu.me/ontology/ccs/0.1#MeleeWeapon">
+    <rdfs:label>Melee Weapon</rdfs:label>
+    <rdfs:comment>Melee Weapon</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://acomagu.me/ontology/ccs/0.1#Skill"/>
+  </owl:Class>
+
+</rdf:RDF>
